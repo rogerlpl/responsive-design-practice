@@ -319,7 +319,7 @@ video {
   margin: 50px 0;
 }
 
-.burguer-button {
+.burger-button {
   width: 40px;
   border-radius: 50%;
   line-height: 40px;
@@ -401,6 +401,13 @@ video {
   /* portada */
   .portada .contenedor {
     position: static;
+  }
+  .header {
+    position: static;
+  }
+  .header .contenedor {
+    position: static;
+  }
   }
   .menu {
     background: rgba(255, 60, 88, .8);

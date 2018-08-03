@@ -19,7 +19,7 @@
         <!-- logotipo -->
         <img src="images/invie.png" srcset="images/invie.png 1x, images/invie2x.png 2x" width="186" height="60" alt="Invie logotipo" />
       </figure>
-      <span class="burguer-button icon-menu" id="burguer-button"></span>
+      <span class="burger-button icon-menu" id="burger-button"></span>
       <nav class="menu" id="menu">
         <!-- menu -->
         <ul>
@@ -133,24 +133,21 @@
     const consulta = window.matchMedia('(max-width:500px)');
     consulta.addListener(mediaQuery)
     
-    var $burguerButton = document.getElementById("burguer-button")
+    var $burgerButton = document.getElementById("burger-button")
     var $menu = document.getElementById("menu")
 
     function mediaQuery() {
       if (consulta.matches) {
-        console.log('se cumplio')
-
-        $burguerButton.addEventListener('touchstart', togglemenu)
+        $burgerButton.addEventListener('touchstart', togglemenu)
       }
       else {
-        $burguerButton.removeEventListener('touchstart', togglemenu)
-        console.log('no se cumplio')
+        $burgerButton.removeEventListener('touchstart', togglemenu)
       }
     }
     
     function togglemenu() {
       $menu.classList.toggle('active')
-      $burguerButton.classList.toggle('icon-close')
+      $burgerButton.classList.toggle('icon-close')
     }
 
 
