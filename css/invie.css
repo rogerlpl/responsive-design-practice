@@ -331,10 +331,21 @@ video {
   left: 20px;
   top: 20px;
   cursor: pointer;
+  color:white;
   z-index: 3;
 }
 
 @media screen and (max-width: 800px) {
+  /* precios */
+  .tabla .contenedor {
+    overflow: auto;
+    border: 1px solid #273b47;
+  }
+  .tabla {
+    margin: 50px 20px;
+  }
+  /* precios */
+  
   /* portada */
   .titulo {
     font-size: 45px;
@@ -376,6 +387,39 @@ video {
     padding: 0;
   }
   /* guitarras */
+  /* footer */
+  .footer .contenedor {
+    display: block;
+  }
+  .contacto {
+    margin: 0 auto;
+  }
+  .formulario {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+  }
+  .intereses label {
+    display: block;
+    font-size: 16px;
+  }
+  input[type="text"], input[type="email"] {
+    padding: 5px;
+    font-size: 16px;
+  }
+  input[type="radio"], input[type="checkbox"] {
+    zoom: 1.5;
+  }
+  textarea {
+    width: 100%;
+  }
+  .col1 {
+    margin: 0;
+  }
+  .col2{
+    margin:0;
+  }
+  /* footer */
 }
 
 @media screen and (max-width: 650px) {
@@ -408,7 +452,7 @@ video {
   .header .contenedor {
     position: static;
   }
-  }
+  
   .menu {
     background: rgba(255, 60, 88, .8);
     position: absolute;
@@ -458,37 +502,6 @@ video {
     font-size: 30px;
   }
   /* guitarras */
-}
-
-@media screen and (max-width: 767px) {
-  .footer .contenedor {
-    display: block;
-  }
-  .contacto {
-    margin: 0 auto;
-  }
-  .formulario {
-    display: block;
-    margin: 0 auto;
-    width: 300px;
-  }
-  .intereses label {
-    display: block;
-    font-size: 16px;
-  }
-  input[type="text"], input[type="email"] {
-    padding: 5px;
-    font-size: 16px;
-  }
-  input[type="radio"], input[type="checkbox"] {
-    zoom: 1.5;
-  }
-  textarea {
-    width: 100%;
-  }
-  .col1 {
-    margin: 0;
-  }
 }
 
 @media screen and (min-device-pixel-ratio: 2) {
