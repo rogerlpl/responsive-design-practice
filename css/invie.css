@@ -463,6 +463,12 @@ video {
 
 @media screen and (max-width: 500px) {
   /* portada */
+  .precios .header .logotipo{
+    margin: 50px 0;
+  }
+  .portada .button {
+    display:block;
+  }
   .burger-button {
     display:block;
   }
@@ -527,6 +533,11 @@ video {
     margin: 0 10px 30px 10px;
   }
   /* guitarras */
+  /* footer */
+  .col2{
+    align-items: stretch;
+  }
+  /* footer */
 }
 
 @media screen and (min-device-pixel-ratio: 2) {
