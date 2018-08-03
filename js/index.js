@@ -36,10 +36,13 @@ const right =4
 const left = 2
 
 gestures.on('swipe', (event) => {
+ 
   if (event.direction === right) {
-    menu.classList.add("active");
+    $menu.classList.add("active");
+    $burgerButton.classList.add('icon-close')
   }
   if (event.direction === left) {
-    menu.classList.remove("active");
+    $burgerButton.classList.remove('icon-close')
+    $menu.classList.remove("active");
   }
 })
